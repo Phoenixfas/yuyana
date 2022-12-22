@@ -62,10 +62,10 @@ export default function Hero() {
 
         </div>
         <div className="flex flex-col min-w-[800px] items-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-1 justify-center text-[#fff4db] m-auto p-10">
-            <p>GIFT GUIDE</p>
-            <h1 className='text-7xl font-serif italic my-8'>Extraordinary Gift guide</h1>
-            <h5 className='text-xl font-serif mb-10'>The perfect gifts to indulge yourself, your interior, and others</h5>
-            <Link href="/" className='bg-[#fff4db] text-black px-4 py-2 rounded-full'>Find your perfect gift</Link>
+            <p>TOUR & TRAVEL</p>
+            <h1 className='text-7xl font-serif italic my-8'>Extraordinary Experience</h1>
+            <h5 className='text-xl font-serif mb-10'>Have an amazing adventure in the land of wonders</h5>
+            <Link href="/" className='bg-[#fff4db] text-black px-4 py-2 rounded-full'>Find your next tour</Link>
         </div>
     </div>
   )
