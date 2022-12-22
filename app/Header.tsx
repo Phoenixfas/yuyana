@@ -7,7 +7,7 @@ export default function Header() {
       <div className="flex flex-1 items-center h-full p-10">
         <FaMicrophoneAlt className="text-2xl" color='#fff'/>
       </div>
-      <div className="flex flex-1 items-center justify-center h-full p-10 text-[2rem] font-medium tracking-[0.6rem] font-poppins">moooi</div>
+      <div className="flex flex-1 items-center justify-center h-full p-10 text-[2rem] font-medium tracking-[0.6rem] font-poppins">yuyana</div>
       <div className="flex flex-1 items-center justify-end gap-10 h-full p-10">
         <FaSearch className="text-2xl" color='#fff'/>
         <FaWindows className="text-2xl" color='#fff'/>
