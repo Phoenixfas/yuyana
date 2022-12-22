@@ -61,7 +61,7 @@ export default function Hero() {
             </div>
 
         </div>
-        <div className="flex flex-col min-w-[800px] items-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-1 justify-center text-[#fff4db] m-auto p-10">
+        <div className="flex flex-col min-w-[900px] items-center absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] z-1 justify-center text-[#fff4db] m-auto p-10">
             <p>TOUR & TRAVEL</p>
             <h1 className='text-7xl font-serif italic my-8'>Extraordinary Experience</h1>
             <h5 className='text-xl font-serif mb-10'>Have an amazing adventure in the land of wonders</h5>
