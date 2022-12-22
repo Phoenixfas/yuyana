@@ -8,7 +8,7 @@ import Menu from "./Menu"
 import SplitScreen from "./SplitScreen"
 import 
 SplitScreen2 from "./SplitScreen2"
-import VideoSection2 from "./VideoSection2"
+// import VideoSection2 from "./VideoSection2"
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
       <Menu />
       <Hero />
       <Browse />
-      <VideoSection2 />
+      {/* <VideoSection2 /> */}
       <ImageSection />
       <SplitScreen />
       <ImageSection2 />

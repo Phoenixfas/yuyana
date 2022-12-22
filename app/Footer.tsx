@@ -11,7 +11,7 @@ export default function Footer() {
         });
     }
   return (
-    <div className='w-full h-[100vh] flex bg-black text-white'>
+    <div className='w-full h-[100vh] flex bg-[#FEA100] text-white'>
         <div className="flex-[1] flex flex-col gap-24 w-1/2 h-full py-[150px] pl-10">
             <div className="flex flex-wrap gap-y-5 w-full text-2xl font-poppins">
                 <Link href="/" className='w-1/2'> Store Locator </Link>
@@ -41,16 +41,19 @@ export default function Footer() {
             </div>
         </div>
         <div className="flex-[1] min-w-[50%] w-1/2 h-full flex flex-col items-end justify-between pb-[150px] pt-10 pr-10">
-            <div className="flex items-center justify-center w-10 h-10 rounded-[50%] bg-[#222] text-white">
+            <div className="flex items-center justify-center w-10 h-10 rounded-[50%] bg-[#FFC322] text-white">
                 <button onClick={scrollToTop} >
                     <FaArrowUp size={30} />
                 </button>
             </div>
-            <div className="flex flex-col text-end text-[#ffffffaa] font-light font-poppins">
-                <p>Designed and Developed by <Link href={"https://afriopia.com"} className='text-slate-400'>Afriopia Unified Systems</Link></p>
+            <div className="flex flex-col text-end text-[#ffffff] font-light font-poppins">
+                <p>Designed and Developed by <Link href={"https://afriopia.com"} className='text-[#04AD39]'>Afriopia Unified Systems</Link></p>
                 <p>&#169;2023 YUYANA</p>
             </div>
         </div>
     </div>
   )
 }
+
+// #FEA100
+// #04AD39
