@@ -30,7 +30,7 @@ export default function SplitScreen() {
         const scrollPosition = scrollY + windowHeight;
 
         // get element position (distance from the top of the page to the bottom of the element)
-        const sectionPosition = section.getBoundingClientRect().top + scrollY + secHeight;
+        const sectionPosition = section.getBoundingClientRect().top + scrollY + secHeight + 150;
 
         // is scroll position greater than element position? (is element in view?)
         if (scrollPosition > sectionPosition) {
@@ -63,9 +63,9 @@ export default function SplitScreen() {
     <div className='w-full h-[100vh] flex'>
         <div className="flex-[1] flex px-14 py-32 items-center justify-center text-[#1F1F1F] bg-[#E3D9C6]">
             <div className='flex flex-col' id='image-sec-2'>
-                <p className={`text-sm ${sectionVisible ? "enter-h" : "hidden"}`}>Blogs</p>
-                <h1 className={`text-[5rem] leading-[5.3rem] max-w-fit font-bold font-serif my-8 enter-h ${sectionVisible ? "enter-h-1" : "hidden"}`}>Coffee. <br/> Have a taste from the originals </h1>
-                <Link href="/" className={`py-2 max-w-fit border-b leading-[0.5rem] border-[#1F1F1F] ${sectionVisible ? "enter-h-3" : "hidden"}`}>Read the story</Link>
+                <p className={`text-sm ${sectionVisible ? "enter-h" : "translate-x-[-100px] opacity-0"}`}>Blogs</p>
+                <h1 className={`text-[5rem] leading-[5.3rem] max-w-fit font-bold font-serif my-8 enter-h ${sectionVisible ? "enter-h-1" : "translate-x-[-100px] opacity-0"}`}>Coffee. <br/> Have a taste from the originals </h1>
+                <Link href="/" className={`py-2 max-w-fit border-b leading-[0.5rem] border-[#1F1F1F] ${sectionVisible ? "enter-h-3" : "translate-x-[-100px] opacity-0"}`}>Read the story</Link>
             </div>
         </div>
         <div className="flex-[1] min-w-[50%] relative">

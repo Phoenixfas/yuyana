@@ -10,7 +10,9 @@ import
 SplitScreen2 from "./SplitScreen2"
 // import VideoSection2 from "./VideoSection2"
 
+
 function Home() {
+
   return (
     <div>
       <Menu />
