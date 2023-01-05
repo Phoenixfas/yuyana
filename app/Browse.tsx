@@ -19,13 +19,13 @@ export default function Browse() {
     // console.log(localTours)
 
   return (
-    <div className='px-[90px] py-[100px] bg-white flex flex-col items-center justify-center'>
+    <div className='px-[90px] py-[100px] bg-[#fff4db] flex flex-col items-center justify-center'>
         <h1 className='text-xl font-black text-slate-800 mb-10'>CHOOSE YOUR NEXT DESTINATION</h1>
         <div className="w-full flex justify-between">
             {localTours.map((tour: any, index) => (
                 <div key={index} className="flex flex-col items-center justify-between text-center w-[200px] transition-colors cursor-pointer max-h-[250px] box-border hover:bg-[#FEA100] pb-5 rounded-lg">
                     <Image src={tour.image} alt="bed" className='object-contain mb-5 w-full rounded-lg' width={200} height={200} />
-                    <p className='text-lg text-slate-600 font-normal capitalize h-full text-[#04AD39]' >{tour.name.toLowerCase()}</p>
+                    <p className='text-lg font-normal capitalize h-full text-[#04AD39]' >{tour.name.toLowerCase()}</p>
                 </div>
             ))}
             

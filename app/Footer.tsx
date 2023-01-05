@@ -11,7 +11,7 @@ export default function Footer() {
         });
     }
   return (
-    <div className='w-full h-[100vh] flex bg-[#FEA100] text-white'>
+    <div className='w-full h-[100vh] flex bg-[#fff4db] text-slate-900'>
         <div className="flex-[1] flex flex-col gap-24 w-1/2 h-full py-[150px] pl-10">
             <div className="flex flex-wrap gap-y-5 w-full text-2xl font-poppins">
                 <Link href="/" className='w-1/2'> Store Locator </Link>
