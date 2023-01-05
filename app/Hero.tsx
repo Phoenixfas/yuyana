@@ -1,11 +1,12 @@
 
-'use client'
-
 import Link from 'next/link'
 import { FaPlay, FaPause, FaVolumeUp, FaVolumeMute } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
+import { useAppSelector } from './redux/hooks'
+
 
 export default function Hero() {
+    const location = useAppSelector(state => state.location)
 
     const [isPlaying, setIsPlaying] = useState(true)
     const [isMuted, setIsMuted] = useState(true)
@@ -46,7 +47,7 @@ export default function Hero() {
     <div className='w-full h-[100vh]'>
         <div className="w-full h-full bg-[#131316]">
             <video id='hero-video' className="w-full h-full object-cover brightness-50" autoPlay loop muted>
-                <source src="/videos/web/Ethiopia.mp4" type="video/mp4" />
+                <source src={location === "Local" ? "/videos/web/Ethiopia.mp4" : "/videos/NomNom.mp4"} type="video/mp4" />
             </video>
 
             {/* add pause/play and mute buttons on the bottom left corner to control the video*/}

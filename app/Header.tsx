@@ -1,14 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaMicrophoneAlt, FaSearch, FaImages } from "react-icons/fa"
+import { FaMicrophoneAlt, FaSearch, FaImages, FaGlobe } from "react-icons/fa"
+import { useAppDispatch } from './redux/hooks'
+import { toggleLocation } from './redux/slices/locationToggleSlice'
 
 export default function Header() {
+  const dispatch = useAppDispatch()
   return (
     <div className='flex items-center justify-between h-[90px] w-full absolute top-0 left-0 z-[10000] text-white'>
       <div className="flex flex-1 items-center h-full p-10">
         <Link href="/">
-          <FaMicrophoneAlt className="text-2xl" color='#fff'/>
+          <FaGlobe className="text-2xl" color='#fff' onClick={() => dispatch(toggleLocation())}/>
         </Link>
       </div>
       <div className="flex flex-1 items-center justify-center h-full p-10 text-[2rem] font-medium tracking-[0.6rem] font-poppins">
