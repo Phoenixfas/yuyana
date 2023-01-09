@@ -8,7 +8,7 @@ export default function Discover() {
             <h1 className='text-[2.5rem]'>DISCOVER OUR MULTITOUR PREMIUM PACKAGES</h1>
             <p className='text-[1.2rem] text-[#00000088] text-center max-w-[400px] font-poppins font-light'>Click on an interior Mood to step through The Portal and into A Life Extraordinary</p>
         </div>
-        <div className='flex gap-10'>
+        <div className='flex gap-10 w-full items-center justify-center'>
 
 
             <div className='felx flex-col hover:scale-125 duration-300 ease-in-out'>

@@ -7,4 +7,18 @@
 body{
     background-color: #131316;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.locanim{
+    transform: perspective(10px);
+    animation: locanimation infinite 2s;
+}
+@keyframes locanimation{
+    from{
+        transform: rotateY(0deg)
+    }
+    to{
+        transform: rotateY(180deg)
+    }
 }
