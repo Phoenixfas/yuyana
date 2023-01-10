@@ -21,8 +21,8 @@ export default function MenuModal() {
                     </div>
                     <div className='flex flex-col items-center justify-center gap-4'>
                         <div className='flex flex-col items-center justify-center gap-4 text-3xl text-white font-poppins font-bold'>
-                            <Link onClick={() => dispatch(toggleMenu())} className='hover:text-[#ddb] transition-all' href={"/"}>Tours</Link>
-                            <Link onClick={() => dispatch(toggleMenu())} className='hover:text-[#ddb] transition-all' href={"/"}>Packages</Link>
+                            <Link onClick={() => dispatch(toggleMenu())} className='hover:text-[#ddb] transition-all' href={"/tours"}>Tours</Link>
+                            <Link onClick={() => dispatch(toggleMenu())} className='hover:text-[#ddb] transition-all' href={"/packages"}>Packages</Link>
                         </div>
                         <div className='flex flex-col items-center justify-center gap-4 text-xl text-white font-poppins font-light'>
                             <Link onClick={() => dispatch(toggleMenu())} href={"/"}>Home</Link>

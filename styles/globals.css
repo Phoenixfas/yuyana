@@ -8,6 +8,7 @@ body{
     background-color: #131316;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 .locanim{
@@ -21,4 +22,14 @@ body{
     to{
         transform: rotateY(180deg)
     }
+}
+
+.hovanim{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.hovanimcon:hover > .hovanim{
+    transform: translateX(0%);
+    opacity: 1;
 }

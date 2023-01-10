@@ -46,7 +46,7 @@ export default function Footer() {
                     <FaArrowUp size={30} />
                 </button>
             </div>
-            <div className="flex flex-col text-end text-[#ffffff] font-light font-poppins">
+            <div className="flex flex-col text-end text-slate-900 font-light font-poppins">
                 <p>Designed and Developed by <Link href={"https://afriopia.com"} className='text-[#04AD39]'>Afriopia Unified Systems</Link></p>
                 <p>&#169;2023 YUYANA</p>
             </div>
