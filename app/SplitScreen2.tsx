@@ -20,6 +20,11 @@ const variants3 = {
     hidden: { opacity: 0, x: 100, transition: { duration: .7, delay: .6 } }
 }
 
+const variants4 = {
+  visible: { opacity: 1, x: 0, transition: { duration: .7 } },
+  hidden: { opacity: 0, x: -100, transition: { duration: .7 } }
+}
+
 export default function SplitScreen2() {
   const ref = useRef(null)
   const isInView = useInView(ref, { margin: "-300px 0px -200px 0px", once: false})
@@ -30,20 +35,22 @@ export default function SplitScreen2() {
   }, [isInView]);
   
   return (
-    <div ref={ref} className='w-full h-[100vh] flex flex-row-reverse'>
-        <div className="flex-[1] flex px-14 py-32 items-center justify-center text-white bg-[#4C363A]">
+    <div ref={ref} className='w-full h-[100vh] flex flex-row-reverse gap-16'>
+        <div className="flex-[1] flex  py-32 items-center justify-center text-[#fff4db]">
             <div className='flex flex-col'>
                 <motion.p animate={controls} variants={variants1} className='text-sm text-[#ffffff99]'>Blogs</motion.p>
-                <motion.h1 animate={controls} variants={variants2} className='text-[5rem] leading-[5.3rem] max-w-fit font-normal font-serif my-8'>Ethiopia Restarting Tourism</motion.h1>
+                <motion.h1 animate={controls} variants={variants2} className='text-[6rem] leading-[6rem] max-w-[70%] font-normal font-serif my-8'>Ethiopia Restarting Tourism</motion.h1>
                 <motion.div animate={controls} variants={variants3}><Link href="/" className='py-2 max-w-fit border-b leading-[0.5rem] border-white'>Read the story</Link></motion.div>
             </div>
         </div>
-        <div className="flex-[1] min-w-[50%] relative overflow-hidden">
-          <ParallaxProvider>
-            <Parallax speed={-20} className="w-full h-full relative">
-              <Image className="w-full h-full object-cover" src={"/images/web/tourism.jpg"} alt={"phone"} fill />
-            </Parallax>
-          </ParallaxProvider>
+        <div className="flex-[1] relative flex items-center justify-end overflow-hidden ">
+            <motion.div animate={controls} variants={variants4} className='w-[70%] h-[90%] relative overflow-hidden rounded-2xl'>
+              <ParallaxProvider>
+                <Parallax speed={-20} className="w-full h-full relative">
+                  <Image className=" object-cover  " src={"/images/web/tourism.jpg"} alt={"phone"} fill />
+                </Parallax>
+              </ParallaxProvider>
+            </motion.div>
         </div>
     </div>
   )

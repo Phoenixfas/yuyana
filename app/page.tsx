@@ -2,13 +2,16 @@
 
 import Browse from "./Browse"
 import Discover from "./Discover"
+import Everything from "./Everything"
 import Hero from "./Hero"
 import ImageSection from "./ImageSection"
 import ImageSection2 from "./ImageSection2"
 import ImageSection3 from "./ImageSection3"
+import { ParticlesContainer } from "./ParticlesContainer"
 import SplitScreen from "./SplitScreen"
 import 
 SplitScreen2 from "./SplitScreen2"
+import Testimonials from "./Testimonials"
 // import VideoSection2 from "./VideoSection2"
 
 
@@ -16,15 +19,18 @@ function Home() {
 
   return (
       <div>
+        <ParticlesContainer />
         <Hero />
         <Browse />
         {/* <VideoSection2 /> */}
         <ImageSection />
+        <Everything />
         <SplitScreen />
-        <ImageSection2 />
-        <SplitScreen2 />
         <Discover />
-        <ImageSection3 />
+        <ImageSection2 />
+        <Testimonials />
+        <SplitScreen2 />
+        {/* <ImageSection3 /> */}
       </div>
   )
 }

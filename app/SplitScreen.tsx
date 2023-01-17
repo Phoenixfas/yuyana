@@ -20,6 +20,11 @@ const variants3 = {
     hidden: { opacity: 0, x: -100, transition: { duration: .7, delay: .6 } }
 }
 
+const variants4 = {
+    visible: { opacity: 1, x: 0, transition: { duration: .7 } },
+    hidden: { opacity: 0, x: 100, transition: { duration: .7 } }
+}
+
 export default function SplitScreen() {
 
   const ref = useRef(null)
@@ -32,20 +37,22 @@ export default function SplitScreen() {
 
 
   return (
-    <div ref={ref} className='w-full h-[100vh] flex'>
-        <div className="flex-[1] flex px-14 py-32 items-center justify-center text-[#1F1F1F] bg-[#E3D9C6]">
-            <div className='flex flex-col' id='image-sec-2'>
-                <motion.p animate={controls} variants={variants1} className={`text-sm`}>Blogs</motion.p>
-                <motion.h1 animate={controls} variants={variants2} className={`text-[5rem] leading-[5.3rem] max-w-fit font-bold font-serif my-8 enter-h `}>Coffee. <br/> Have a taste from the originals </motion.h1>
-                <motion.div animate={controls} variants={variants3} ><Link href="/" className={`py-2 max-w-fit border-b leading-[0.5rem] border-[#1F1F1F] `}>Read the story</Link></motion.div>
+    <div ref={ref} className='w-full h-[100vh] flex  gap-16'>
+        <div className="flex-[1] flex  py-32 items-center justify-center text-[#fff4db]">
+            <div className='flex flex-col pr-14 text-right'>
+                <motion.p animate={controls} variants={variants1} className='text-sm text-[#ffffff99]'>Blogs</motion.p>
+                <motion.h1 animate={controls} variants={variants2} className='text-[6rem] leading-[6rem] font-normal font-serif my-8'>Coffee. <br/> Have a taste from the originals </motion.h1>
+                <motion.div animate={controls} variants={variants3}><Link href="/" className='py-2 max-w-fit border-b leading-[0.5rem] border-white'>Read the story</Link></motion.div>
             </div>
         </div>
-        <div className="flex-[1] min-w-[50%] relative overflow-hidden">
-          <ParallaxProvider>
-            <Parallax speed={-20} className="w-full h-full relative">
-              <Image className="w-full h-full object-cover" src={"/images/web/coffee.jpg"} alt={"phone"} fill />
-            </Parallax>
-          </ParallaxProvider>
+        <div className="flex-[1] relative flex items-center justify-start overflow-hidden ">
+            <motion.div animate={controls} variants={variants4} className='w-[70%] h-[90%] relative overflow-hidden rounded-2xl'>
+              <ParallaxProvider>
+                <Parallax speed={-20} className="w-full h-full relative">
+                  <Image className=" object-cover  " src={"/images/web/coffee.jpg"} alt={"phone"} fill />
+                </Parallax>
+              </ParallaxProvider>
+            </motion.div>
         </div>
     </div>
   )
