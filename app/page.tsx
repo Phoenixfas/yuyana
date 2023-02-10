@@ -12,7 +12,7 @@ import SplitScreen from "./SplitScreen"
 import 
 SplitScreen2 from "./SplitScreen2"
 import Testimonials from "./Testimonials"
-// import VideoSection2 from "./VideoSection2"
+import VideoSection2 from "./VideoSection2"
 
 
 function Home() {
@@ -22,10 +22,10 @@ function Home() {
         <ParticlesContainer />
         <Hero />
         <Browse />
-        {/* <VideoSection2 /> */}
-        <ImageSection />
-        <Everything />
         <SplitScreen />
+        <VideoSection2 />
+        <Everything />
+        <ImageSection />
         <Discover />
         <ImageSection2 />
         <Testimonials />

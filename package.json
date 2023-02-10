@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@lottiefiles/react-lottie-player": "^3.5.2",
     "@reduxjs/toolkit": "^1.9.1",
     "axios": "^1.2.2",
     "embla-carousel-autoplay": "^7.0.6",

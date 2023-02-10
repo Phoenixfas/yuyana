@@ -39,22 +39,35 @@ body{
 }
 .browse-hover-img{
     width: 100%;
-    min-height: 120px !important;
-    max-height: 120px !important;
+    min-height: 130px !important;
+    max-height: 130px !important;
     object-fit: cover;
 }
 .browse-hover:hover .browse-hover-img{
     transform: translateY(-10px);
 }
+.browse-hover-p{
+    transform: translateY(-100%);
+    opacity: 0;
+}
 .browse-hover:hover .browse-hover-p{
     transform: translateY(-30px);
-    background-color: #FEA100;
+    background: linear-gradient(to bottom, #04ac3c, #FEA100 );
     color: #fff;
+    opacity: 1;
 }
 
 .discover:hover .discover-image{
-    box-shadow: 0 0 30px #ffffff;
+    box-shadow: 0 0 30px #04ac3c;
     transition: .3s;
+}
+.discover-img{
+    --img-move-x: 0px;
+    --img-move-y: 0px;
+    transform: translateX(var(--img-move-x)) translateY(var(--img-move-y));
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px !important;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -84,3 +97,133 @@ body{
 } */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////////////////   About    /////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ############################################  Media Queries    ############################################# */
+@media only screen and (max-width: 599px){
+    
+    .footer {
+        flex-direction: column;
+    }
+    .embla{
+        padding-top: 100px;
+    }
+    /* ///////////////////////////////about/////////////////////////////// */
+    .about-hero{
+        flex-direction: column-reverse;
+    }
+    .about-hero-h1{
+        position: relative;
+        left: 0;
+        font-size: 3rem;
+        padding: 0 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .about-hero-content{
+        padding-right: 0;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .about-hero-img{
+        align-items: center;
+        padding: 0 30px;
+    }
+    
+    .about-team-h1{
+        font-size: 2rem;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .about-team-back {
+        display: none;
+    }
+    .about-team-front {
+        flex-direction: column;
+    }
+    .testimonial-extra{
+        display: none;
+    }
+    /* /////////////////////////////////////////////////////////////////// */
+    
+  }
+  @media only screen and (min-width: 600px) and (max-width: 768px){
+    .footer {
+        flex-direction: column;
+    }
+    /* ///////////////////////////////about/////////////////////////////// */
+    .about-hero{
+        flex-direction: column-reverse;
+    }
+    .about-hero-h1{
+        position: relative;
+        left: 0;
+        font-size: 3rem;
+        padding: 0 30px;
+        align-items: center;
+    }
+    .about-hero-content{
+        padding-right: 0;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .about-hero-img{
+        align-items: center;
+        padding: 0 30px;
+    }
+
+    .about-team-h1{
+        font-size: 2rem;
+    }
+    .about-team-back {
+        display: none;
+    }
+    .about-team-front {
+        flex-direction: column;
+    }
+    /* //////////////////////////////////////////////////////////////////// */
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    /* ///////////////////////////////about/////////////////////////////// */
+    .about-hero{
+        flex-direction: column-reverse;
+    }
+    .about-hero-h1{
+        position: relative;
+        left: 0;
+        font-size: 3rem;
+        padding: 0 30px;
+        align-items: center;
+    }
+    .about-hero-content{
+        padding-right: 0;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .about-hero-img{
+        align-items: center;
+        padding: 0 30px;
+    }
+    
+    .about-team-h1{
+        font-size: 2rem;
+    }
+    .about-team-back {
+        display: none;
+    }
+    .about-team-front {
+        flex-direction: column;
+    }
+    /* /////////////////////////////////////////////////////////////////// */
+
+  }
+/* ############################################################################################################# */

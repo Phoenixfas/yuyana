@@ -8,7 +8,8 @@ import { store } from './redux/store'
 import { Provider } from 'react-redux'
 import { persistStore } from 'redux-persist'
 import { PersistGate } from 'redux-persist/integration/react'
-import LgModal from './LgModal'
+import ImageModal from './gallery/ImageModal'
+// import LgModal from './LgModal'
 
 let persistor = persistStore(store)
 
@@ -24,7 +25,8 @@ export default function RootLayout({
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor} >
             <Header />
-            <LgModal />
+            {/* <LgModal /> */}
+            <ImageModal />
             <MenuModal />
             <Menu />
             {children}

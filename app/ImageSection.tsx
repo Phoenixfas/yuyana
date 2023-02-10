@@ -30,7 +30,7 @@ export default function ImageSection() {
     }, [isInView]);
 
   return (
-    <div ref={ref} className='w-full h-[100vh] relative'>
+    <div ref={ref} className='w-full overflow-hidden h-[100vh] relative'>
       <ParallaxProvider>
         <div className="w-full h-full bg-[#131316] relative overflow-hidden">
           <Parallax speed={-30} className="w-full h-full relative">

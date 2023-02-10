@@ -18,7 +18,7 @@ export class ParticlesContainer extends React.PureComponent {
         },
         particles: {
           color: {
-            value: "#FEA100",
+            value: ["#FEA100", "#04ac3c"],
           }
         }
     };

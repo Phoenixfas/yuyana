@@ -37,7 +37,7 @@ export default function SplitScreen() {
 
 
   return (
-    <div ref={ref} className='w-full h-[100vh] flex  gap-16'>
+    <div ref={ref} className='w-full h-[100vh] overflow-hidden flex  gap-16 mb-20'>
         <div className="flex-[1] flex  py-32 items-center justify-center text-[#fff4db]">
             <div className='flex flex-col pr-14 text-right'>
                 <motion.p animate={controls} variants={variants1} className='text-sm text-[#ffffff99]'>Blogs</motion.p>
