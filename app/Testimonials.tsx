@@ -35,8 +35,8 @@ export default function Testimonials() {
 
 
   return (
-    <motion.div ref={ref} variants={variants1} animate={controls} className='h-screen w-full py-14 flex flex-col items-center justify-end text-[#FEA100]'>
-        <h1 className='text-4xl font-light mb-10 text-center'>What Our Customers Say</h1>
+    <motion.div ref={ref} variants={variants1} animate={controls} className='h-[120vh] w-full py-14 flex flex-col items-center justify-center text-[#FEA100]'>
+        <h1 className='text-4xl font-light text-center'>What Our Customers Say</h1>
         <div ref={emblaRef} className='embla'>
             <div className='embla__container'>
 

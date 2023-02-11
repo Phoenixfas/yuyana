@@ -15,15 +15,14 @@ export default function Footer() {
         <div className="flex-[1] mb-5 flex flex-col gap-24 h-full py-[150px] pl-10">
             <div className="flex flex-wrap gap-20 w-full text-2xl font-poppins">
                 <div className="flex flex-col gap-y-5">
-                    <Link href="/" className=''> Store Locator </Link>
-                    <Link href="/" className=''> Newsletter </Link>
-                    <Link href="/" className=''> Material Library </Link>
-                    <Link href="/" className=''> Press Area </Link>
+                    <Link href="/" className=''> Home </Link>
+                    <Link href="/about" className=''> About Us </Link>
+                    <Link href="/contact" className=''> Contact </Link>
+                    <Link href="/blog" className=''> Blog </Link>
                 </div>
                 <div className="flex flex-col gap-y-5">
-                    <Link href="/" className=''> Shipping & Returns </Link>
-                    <Link href="/" className=''> Jobs </Link>
-                    <Link href="/" className=''> FAQs </Link>
+                    <Link href="/tours" className=''> Tours </Link>
+                    <Link href="/packages" className=''> Packages </Link>
                 </div>
             </div>
             <div className='flex flex-wrap gap-10'>
