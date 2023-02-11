@@ -37,19 +37,19 @@ export default function SplitScreen() {
 
 
   return (
-    <div ref={ref} className='w-full h-[100vh] overflow-hidden flex  gap-16 mb-20'>
-        <div className="flex-[1] flex  py-32 items-center justify-center text-[#fff4db]">
-            <div className='flex flex-col pr-14 text-right'>
+    <div ref={ref} className='split-screen w-full h-screen overflow-hidden flex  gap-16 mb-20'>
+        <div className="split-screen-contentCon flex-[1] flex  py-32 items-center justify-center text-[#fff4db]">
+            <div className='split-screen-content flex flex-col pr-14 text-right'>
                 <motion.p animate={controls} variants={variants1} className='text-sm text-[#ffffff99]'>Blogs</motion.p>
                 <motion.h1 animate={controls} variants={variants2} className='text-[6rem] leading-[6rem] font-normal font-serif my-8'>Coffee. <br/> Have a taste from the originals </motion.h1>
-                <motion.div animate={controls} variants={variants3}><Link href="/" className='py-2 max-w-fit border-b leading-[0.5rem] border-white'>Read the story</Link></motion.div>
+                <motion.div animate={controls} variants={variants3}><Link href="/" className='py-2 text-sm max-w-fit border-b leading-[0.5rem] border-white'>Read the story</Link></motion.div>
             </div>
         </div>
-        <div className="flex-[1] relative flex items-center justify-start overflow-hidden ">
+        <div className="split-screen-img flex-[1] relative flex items-center justify-start overflow-hidden ">
             <motion.div animate={controls} variants={variants4} className='w-[70%] h-[90%] relative overflow-hidden rounded-2xl'>
               <ParallaxProvider>
                 <Parallax speed={-20} className="w-full h-full relative">
-                  <Image className=" object-cover  " src={"/images/web/coffee.jpg"} alt={"phone"} fill />
+                  <Image className=" object-cover  rounded-2xl" src={"/images/web/coffee.jpg"} alt={"phone"} fill />
                 </Parallax>
               </ParallaxProvider>
             </motion.div>

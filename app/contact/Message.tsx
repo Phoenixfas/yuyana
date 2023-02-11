@@ -56,10 +56,10 @@ export default function Message() {
   return (
     <div ref={ref} className="w-full mt-32 overflow-hidden flex flex-col gap-20 items-center">
         {/* <h1 className='text-5xl font-bold text-[#04ac3c] tracking-[.5rem]'>SEND A MESSAGE</h1> */}
-        <motion.h1 variants={variants3} animate={controls} className='text-5xl font-bold text-[#FEA100] tracking-[.5rem]'>SEND A MESSAGE</motion.h1>
+        <motion.h1 variants={variants3} animate={controls} className='text-5xl text-center font-bold text-[#FEA100] tracking-[.5rem]'>SEND A MESSAGE</motion.h1>
         <div className="flex flex-wrap w-3/4">
             <motion.div variants={variants1} animate={controls} className="flex-[1] flex items-center justify-center">
-                <div className='w-[500px] h-[500px] relative overflow-hidden'>
+                <div className='contact-message-img w-[500px] h-[500px] relative overflow-hidden'>
                     <Player src={"https://assets1.lottiefiles.com/packages/lf20_zj3qnsfs.json"}  background="transparent"  speed={1}  style={{ width: '100%', height: '100%' }}  loop  autoplay />
                 </div>
             </motion.div>

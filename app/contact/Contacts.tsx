@@ -43,12 +43,12 @@ export default function Contacts() {
         {/* <motion.h1 variants={variants1} animate={controls} className='text-6xl font-bold tracking-[.5rem] text-[#04ac3c]'>REACH US @</motion.h1> */}
         <div className="w-full relative flex  justify-center">
 
-            <motion.div variants={variants2} animate={controls} className="flex absolute w-full h-[300px] gap-[164px] justify-center items-center">
+            <motion.div variants={variants2} animate={controls} className="about-team-back flex absolute w-full h-[300px] gap-[164px] justify-center items-center">
                 <div className="w-[200px] h-[200px] rounded-2xl rotate-45 border-[30px] border-[#04ac3c55]"></div>
                 <div className="w-[200px] h-[200px] rounded-2xl rotate-45 border-[30px] border-[#04ac3c55]"></div>
             </motion.div>
             <motion.div variants={variants3} animate={controls} className="relative flex  text-[#131316]">
-                <div className="flex items-center gap-16">
+                <div className="about-team-front flex items-center gap-16">
                     <div className="w-[300px] h-[300px] hover:scale-105 duration-300 rounded-2xl p-3 bg-[#04ac3c]">
                         <Link href={"mailto:hello@afriopia.com"}>
                             <div className="w-full h-full rounded-2xl bg-[#fff4db] flex flex-col gap-5 items-center  p-5">

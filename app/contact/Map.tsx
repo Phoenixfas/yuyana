@@ -4,7 +4,7 @@ import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
 export default function Map() {
   return (
-    <div className="h-[400px] w-full overflow-hidden">
+    <div className="contact-map h-[400px] w-full overflow-hidden">
         <ParallaxProvider>
             <Parallax speed={-20} className="w-full h-full relative">
                 <div className="relative text-right w-full h-full">

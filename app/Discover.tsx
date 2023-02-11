@@ -31,12 +31,12 @@ export default function Discover() {
 
 
     return (
-    <div id='discover-container' className='w-full h-[100vh] felx flex-col items-center text-[#FEA100] pt-20 px-28'>
+    <div id='discover-container' className='home-discoverCon w-full min-h-[100vh] felx flex-col items-center text-[#FEA100] py-20 px-28'>
         <div className='w-full flex flex-col items-center mb-20'>
-            <h1 className='text-[2.5rem]'>DISCOVER OUR MULTITOUR PREMIUM PACKAGES</h1>
+            <h1 className='text-[2.5rem] text-center'>DISCOVER OUR MULTITOUR PREMIUM PACKAGES</h1>
             <p className='text-[1.2rem] text-center max-w-[400px] font-poppins font-light'>Click on a package to have an Extraordinary Experience </p>
         </div>
-        <div className='flex flex-wrap gap-10 w-full items-center justify-center'>
+        <div className='home-discover flex flex-wrap gap-10 w-full items-center justify-center'>
 
 
             <div className='felx flex-col hover:scale-110 discover duration-300 ease-in-out'>

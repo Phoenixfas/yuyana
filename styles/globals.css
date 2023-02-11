@@ -116,6 +116,55 @@ body{
     .embla{
         padding-top: 100px;
     }
+    /* ///////////////////////////////Home/////////////////////////////// */
+    .home-hero-h1 {
+        font-size: 3rem;
+    }
+    .home-video-h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .split-screen {
+        flex-direction: column;
+        gap: 20px;
+        border: 1px solid #fff4db;
+        /* margin: 10px; */
+        border-radius: 12px;
+        padding: 50px 0;
+    }
+    .split-screen-contentCon{
+        padding: 0 50px;
+    }
+    .split-screen-content {
+        text-align: center;
+        align-items: center;
+        padding-right: 0;
+    }
+    .split-screen-content h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .split-screen-img {
+        justify-content: center;
+    }
+    .split-screen-img > div{
+        width: 50%;
+        height: 100%;
+    }
+    .home-discoverCon {
+        padding: 80px 0;
+    }
+    .home-discover {
+        flex-direction: column;
+    }
+    .home-img-h1 {
+        font-size: 3rem;
+        line-height: 3.3rem;
+    }
+
+    /* /////////////////////////////////////////////////////////////////// */
+
+
     /* ///////////////////////////////about/////////////////////////////// */
     .about-hero{
         flex-direction: column-reverse;
@@ -153,12 +202,33 @@ body{
         display: none;
     }
     /* /////////////////////////////////////////////////////////////////// */
+    .contact-map {
+        margin-top: 200px;
+    }
+    .contact-message-img {
+        width: 300px;
+        height: 300px;
+    }
+    /* /////////////////////////////////////////////////////////////////// */
     
   }
   @media only screen and (min-width: 600px) and (max-width: 768px){
     .footer {
         flex-direction: column;
     }
+    /* ///////////////////////////////Home/////////////////////////////// */
+    .split-screen-content h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .split-screen-img > div{
+        width: 90%;
+        height: 60%;
+    }
+    
+    /* /////////////////////////////////////////////////////////////////// */
+
+
     /* ///////////////////////////////about/////////////////////////////// */
     .about-hero{
         flex-direction: column-reverse;
@@ -190,9 +260,26 @@ body{
         flex-direction: column;
     }
     /* //////////////////////////////////////////////////////////////////// */
+    .contact-map {
+        margin-top: 200px;
+    }
+    /* //////////////////////////////////////////////////////////////////// */
     
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px){
+    /* ///////////////////////////////Home/////////////////////////////// */
+    .split-screen-content h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .split-screen-img > div{
+        width: 80%;
+        height: 60%;
+    }
+    
+    /* /////////////////////////////////////////////////////////////////// */
+
+
     /* ///////////////////////////////about/////////////////////////////// */
     .about-hero{
         flex-direction: column-reverse;
@@ -222,6 +309,10 @@ body{
     }
     .about-team-front {
         flex-direction: column;
+    }
+    /* /////////////////////////////////////////////////////////////////// */
+    .contact-map {
+        margin-top: 200px;
     }
     /* /////////////////////////////////////////////////////////////////// */
 
