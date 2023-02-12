@@ -1,6 +1,6 @@
 import React from 'react'
 import Featured from './Featured'
-import MasonryList from './MasonryList'
+import ToursPaginator from './ToursPaginator'
 
 export default function Tours() {
   return (
@@ -10,18 +10,13 @@ export default function Tours() {
         </div>
 
 
-        <div className='py-12 px-28 pt-32'>
-            <h1 className='text-3xl font-bold mb-10'>Featured Places</h1>
-            <div className='grid grid-cols-4  gap-10'>
-
-            <div className='w-full col-[1/4] '>
+        <div className='py-12  pt-32'>
+            
+            <div className='w-full flex flex-col'>
                 <Featured />
-                <MasonryList />
+                <ToursPaginator />
             </div>
 
-            <div className='bg-slate-300 w-full h-[500px] rounded-md'></div>
-
-            </div>
         </div>
     </>
   )

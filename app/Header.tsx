@@ -1,11 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { FaMicrophoneAlt, FaSearch, FaImages, FaGlobe } from "react-icons/fa"
 import { useAppDispatch } from './redux/hooks'
 import { toggleLocation } from './redux/slices/locationToggleSlice'
+import { changeActiveTour } from './redux/slices/activeTourSlice'
 
 export default function Header() {
+  const router = useRouter()
   const dispatch = useAppDispatch()
   const [searchActive, setSearchActive] = useState(false)
   const [searchText, setSearchText] = useState('')
@@ -94,6 +97,8 @@ const clearSearch = () => {
                       <div className='px-5 py-3 duration-300 hover:bg-gray-100 hover:shadow-md hover:rounded-xl cursor-pointer' key={index}>
                           <p id='blog-search' onClick={() => {
                               clearSearch()
+                              dispatch(changeActiveTour(tour))
+                              router.push('/tours/view')
                               }} 
                           >
                               {tour.name.charAt(0).toUpperCase() + tour.name.slice(1)}

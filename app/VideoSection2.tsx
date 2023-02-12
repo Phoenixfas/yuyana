@@ -29,7 +29,7 @@ export default function VideoSection2() {
             {/* <p className='text-[#ffffff99] text-sm'>PRODUCT STORY</p> */}
             <h1 className='home-video-h1 text-[5rem] leading-[5.3rem] text-center font-normal font-sans my-8'>Explore The World Like Never Before</h1>
             {/* <h5 className='text-xl font-serif mb-10'>The perfect gifts to indulge yourself, your interior, and others</h5> */}
-            <Link href="/" className='bg-white text-black px-4 py-2 rounded-full'>Explore Now</Link>
+            {/* <Link href="/" className='bg-white text-black px-4 py-2 rounded-full'>Explore Now</Link> */}
         </div>
     </div>
   )
