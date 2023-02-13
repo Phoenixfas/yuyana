@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Featured() {
   return (
-    <div className="w-full px-28 flex flex-col">
+    <div className="tours-featuredCon w-full px-28 flex flex-col">
         <h1 className='tours-featured-h1 text-3xl font-bold mb-10'>Featured Places</h1>
         <div className='tours-featured w-full flex flex-wrap items-center justify-start gap-5 mb-16'>
             <Link href={"/tours"} className='w-[200px] h-[200px] overflow-hidden rounded-md relative cursor-pointer'>

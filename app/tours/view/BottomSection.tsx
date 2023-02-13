@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useAppSelector } from '../../redux/hooks'
 import { FaCheck } from 'react-icons/fa'
 import { MdClose } from 'react-icons/md'
@@ -15,13 +15,23 @@ const variants2 = {
 }
 
 export default function BottomSection() {
+    const [animOnce, setAnimOnce] = useState(false)
     const tour = useAppSelector(state => state.activeTour)
     const ref = useRef(null)
-    const isInView = useInView(ref, { margin: "-200px", once: false})
+    const isInView = useInView(ref, { margin: "-200px", once: animOnce})
     const controls = useAnimationControls()
+
+    const [margin, setMargin] = useState('-300px')
+    const screenSize = window.innerWidth
     
     useEffect(() => {
-        controls.start(isInView ? "visible" : "hidden")
+        if (screenSize < 600) {
+            setAnimOnce(true)
+            controls.start("visible")
+          }else{
+            setAnimOnce(false)
+            controls.start(isInView ? "visible" : "hidden")
+          }
     }, [isInView]);
 
 

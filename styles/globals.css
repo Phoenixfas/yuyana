@@ -109,7 +109,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 120px;
     /* background-color: #fff; */
     border: 1px solid #fff4db;
     border-radius: 100px;
@@ -160,6 +160,43 @@ body{
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////// */
 
+/* //////////////////////////////////////// Blog ////////////////////////////////////// */
+
+
+
+.blog-modal-sanitized p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.blog-modal-sanitized a{
+    color: #4eaee5;
+}
+.blog-modal-sanitized br{
+    width: 100%;
+    height: 1.2rem;
+}
+
+.blog-modal-sanitized h1{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #FEA100;
+}
+.blog-modal-sanitized h2{
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    color: #FEA100;
+}
+.blog-modal-sanitized h3{
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #FEA100;
+}
+.blog-modal-sanitized h4{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #FEA100;
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -172,6 +209,9 @@ body{
     }
     .embla{
         padding-top: 100px;
+    }
+    .pagination{
+        margin: 20px 10px;
     }
     /* ///////////////////////////////Home/////////////////////////////// */
     .home-hero-h1 {
@@ -225,6 +265,9 @@ body{
     /* ///////////////////////////////Tours/////////////////////////////// */
     .tours{
         padding: 128px 20px;
+    }
+    .tours-featuredCon {
+        padding: 0 20px;
     }
     .tours-featured{
         justify-content: center;
@@ -304,6 +347,11 @@ body{
         height: 300px;
     }
     /* /////////////////////////////////////////////////////////////////// */
+    .blog{
+        flex-direction: column;
+        align-items: center;
+        padding: 144px 20px;
+    }
     
   }
   @media only screen and (min-width: 600px) and (max-width: 768px){
@@ -383,6 +431,10 @@ body{
         margin-top: 200px;
     }
     /* //////////////////////////////////////////////////////////////////// */
+    .blog{
+        flex-direction: column;
+        padding: 144px 20px;
+    }
     
 }
 @media only screen and (min-width: 768px) and (max-width: 1000px){

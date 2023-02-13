@@ -6,6 +6,8 @@ import locationToggleReducer from "./locationToggleSlice";
 import galleryToggleReducer from "./galleryToggleSlice";
 import activeImageReducer from "./activeImageSlice";
 import activeTourReducer from "./activeTourSlice";
+import activeBlogReducer from "./activeBlogSlice";
+import activePackageReducer from "./activePackageSlice";
 
 export const rootReducer = combineReducers({
   counter: counterReducer,
@@ -15,6 +17,8 @@ export const rootReducer = combineReducers({
   galleryToggle: galleryToggleReducer,
   activeImage: activeImageReducer,
   activeTour: activeTourReducer,
+  activeBlog: activeBlogReducer,
+  activePackage: activePackageReducer,
 });
 
 export type RootState = ReturnType<typeof rootReducer>;

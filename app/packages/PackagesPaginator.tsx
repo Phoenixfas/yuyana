@@ -7,7 +7,7 @@ import tours from '../../data/tours'
 // import { useAppSelector } from '../../redux/hooks';
 
 
-interface TourPaginatorProps {
+interface PackagePaginatorProps {
     d: any
 }
 
@@ -27,7 +27,7 @@ export default function RegistererPaginator({path}: any) {
         }
         const fetchData = async () => {
             try {
-                const res = await fetch(`https://test.afriopia.com/tours`, config)
+                const res = await fetch(`https://test.afriopia.com/packages`, config)
                 const data = await res.json()
                 setData(data.data)
                 setLoading(false)
@@ -53,7 +53,7 @@ export default function RegistererPaginator({path}: any) {
 }
 
 
-const Paginator = ({d}: TourPaginatorProps) => {
+const Paginator = ({d}: PackagePaginatorProps) => {
     const [currentItems, setCurrentItems] = useState([]);
     const [pageCount, setPageCount] = useState(0);
     const [itemOffset, setItemOffset] = useState(0);

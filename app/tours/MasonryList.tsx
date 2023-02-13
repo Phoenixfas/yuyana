@@ -10,12 +10,12 @@ export default function MasonryList({t}: {t: any}) {
     const tours = t
     const dispatch = useAppDispatch()
 
-    useEffect(() => {
-        fetch('https://test.afriopia.com/tours')
-            .then(res => res.json())
-            .then(data => console.log(data.data))
-            .catch(err => console.log(err))
-    }, [])
+    // useEffect(() => {
+    //     fetch('https://test.afriopia.com/tours')
+    //         .then(res => res.json())
+    //         .then(data => console.log(data.data))
+    //         .catch(err => console.log(err))
+    // }, [])
 
 
   return (

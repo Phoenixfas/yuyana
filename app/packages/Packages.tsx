@@ -3,10 +3,10 @@ import Image from 'next/image'
 import React from 'react'
 import Featured from './Featured'
 import Filter from './Filter'
-import ToursPaginator from './ToursPaginator'
+import PackagesPaginator from './PackagesPaginator'
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
 
-export default function Tours() {
+export default function Packages() {
   return (
     <>
         <div className=" h-52 w-full relative flex justify-center items-end">
@@ -25,7 +25,7 @@ export default function Tours() {
             
             <div className='w-full flex flex-col'>
                 <Featured />
-                <ToursPaginator />
+                <PackagesPaginator />
             </div>
 
         </div>
