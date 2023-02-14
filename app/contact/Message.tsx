@@ -69,20 +69,20 @@ export default function Message() {
                 )}
                 <form className="w-full flex flex-col gap-7 text-[#131316]" onSubmit={handleSubmit}>
                     <div className='flex flex-col'>
-                        <label className='text-md font-light text-[#fff4db]'>Name</label>
-                        <input value={user_name} onChange={(e) => setName(e.target.value)} className='text-sm bg-[#fff4db] p-3 outline-none border-none w-full rounded-md' required type="text" name="user_name" />
+                        <label className='text-md font-light text-[#131316]'>Name</label>
+                        <input value={user_name} onChange={(e) => setName(e.target.value)} className='text-sm p-3 outline-none border-b-2 border-[#131316] w-full rounded-md' required type="text" name="user_name" />
                     </div>
                     <div className='flex flex-col'>
-                        <label className='text-md font-light text-[#fff4db]'>Email</label>
-                        <input value={user_email} onChange={(e) => setEmail(e.target.value)} className='text-sm bg-[#fff4db] p-3 outline-none border-none w-full rounded-md' required type="email" name="user_email"/>
+                        <label className='text-md font-light text-[#131316]'>Email</label>
+                        <input value={user_email} onChange={(e) => setEmail(e.target.value)} className='text-sm p-3 outline-none border-b-2 border-[#131316] w-full rounded-md' required type="email" name="user_email"/>
                     </div>
                     <div className='flex flex-col'>
-                        <label className='text-md font-light text-[#fff4db]'>Subject</label>
-                        <input value={user_subject} onChange={(e) => setSubject(e.target.value)} className='text-sm bg-[#fff4db] p-3 outline-none border-none w-full rounded-md' required type="text" name="user_subject"/>
+                        <label className='text-md font-light text-[#131316]'>Subject</label>
+                        <input value={user_subject} onChange={(e) => setSubject(e.target.value)} className='text-sm p-3 outline-none border-b-2 border-[#131316] w-full rounded-md' required type="text" name="user_subject"/>
                     </div>
                     <div className='flex flex-col'>
-                        <label className='text-md font-light text-[#fff4db]'>Message</label>
-                        <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='text-sm bg-[#fff4db] p-3 outline-none border-none w-full rounded-md' required name="message"></textarea>
+                        <label className='text-md font-light text-[#131316]'>Message</label>
+                        <textarea value={message} onChange={(e) => setMessage(e.target.value)} className='text-sm p-3 outline-none border-b-2 border-[#131316] w-full rounded-md' required name="message"></textarea>
                     </div>
                     <button type='submit' className='bg-[#FEA100] text-[#fff4db] rounded-md py-3 px-10 w-fit text-xl font-bold'>Send</button>
                 </form>

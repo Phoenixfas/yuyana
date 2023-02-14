@@ -40,32 +40,32 @@ export default function Discover() {
 
 
             <div className='felx flex-col hover:scale-110 discover duration-300 ease-in-out'>
-                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] w-[250px] h-[250px]'>
-                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] overflow-hidden relative' >
+                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] w-[250px] h-[250px]'>
+                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] border-4 border-[#13131633] bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] overflow-hidden relative' >
                         <Image src='https://picsum.photos/300' alt='discover' className='object-cover discover-img rounded-[50%]' width={300} height={300} />
                     </div>
                 </div>
                 <p className='text-center font-poppins text-[#fff4db]'>Beauty Blooms</p>
             </div>
             <div className='felx flex-col hover:scale-110 discover duration-300 ease-in-out'>
-                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] w-[250px] h-[250px]'>
-                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] overflow-hidden relative' >
+                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] w-[250px] h-[250px]'>
+                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] border-4 border-[#13131633] bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] overflow-hidden relative' >
                         <Image src='https://picsum.photos/301' alt='discover' className='object-cover discover-img rounded-[50%]' width={300} height={300} />
                     </div>
                 </div>
                 <p className='text-center font-poppins text-[#fff4db]'>Beauty Blooms</p>
             </div>
             <div className='felx flex-col hover:scale-110 discover duration-300 ease-in-out'>
-                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] w-[250px] h-[250px]'>
-                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] overflow-hidden relative' >
+                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] w-[250px] h-[250px]'>
+                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] border-4 border-[#13131633] bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] overflow-hidden relative' >
                         <Image src='https://picsum.photos/302' alt='discover' className='object-cover discover-img rounded-[50%]' width={300} height={300} />
                     </div>
                 </div>
                 <p className='text-center font-poppins text-[#fff4db]'>Beauty Blooms</p>
             </div>
             <div className='felx flex-col hover:scale-110 discover duration-300 ease-in-out'>
-                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] w-[250px] h-[250px]'>
-                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] bg-gradient-to-br from-[#04ac3c] to-[#FEA100] rounded-[50%] overflow-hidden relative' >
+                <div className='flex items-center justify-center discover-image duration-300 mb-6 bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] w-[250px] h-[250px]'>
+                    <div className='flex items-center justify-center max-w-[140px] max-h-[140px] border-4 border-[#13131633] bg-gradient-to-br from-[#13131688] to-[#13131611] rounded-[50%] overflow-hidden relative' >
                         <Image src='https://picsum.photos/303' alt='discover' className='object-cover discover-img rounded-[50%]' width={300} height={300} />
                     </div>
                 </div>

@@ -8,7 +8,7 @@ import Message from './Message'
 
 export default function Contact() {
   return (
-    <div className='min-h-screen text-[#fff4db]'>
+    <div className='min-h-screen text-[#131316]'>
       <ParticlesContainer />
       <HeroSection />
       <Contacts />

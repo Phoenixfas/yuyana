@@ -76,10 +76,10 @@ const clearSearch = () => {
   // console.log(searchText)
 
   return (
-    <div id='header' className={`header flex sm:flex-col flex-wrap items-center h-[90px] w-full fixed top-0 left-0 z-[10000] text-white duration-500`}>
+    <div id='header' className={`header flex sm:flex-col flex-wrap items-center h-[90px] w-full fixed top-0 left-0 z-[10000] text-[#131316] duration-500`}>
       <div className="flex w-1/3 items-center h-full p-10">
         <Link href="/gallery">
-          <FaImages className="text-2xl" color='#fff'/>
+          <FaImages className="text-2xl" color='#04ac3c'/>
         </Link>
       </div>
       <div className="flex w-1/3 items-center justify-center h-full py-10 text-[2rem] font-medium tracking-[0.6rem] font-poppins">
@@ -109,7 +109,7 @@ const clearSearch = () => {
             )}
           </div>
           <Link href="/" onClick={() => setSearchActive(!searchActive)}>
-            <FaSearch className="text-2xl" color='#fff'/>
+            <FaSearch className="text-2xl" color='#04ac3c'/>
           </Link>
         </div>
         {/* <Link href="/">

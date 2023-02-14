@@ -5,10 +5,21 @@
 
 /* write custom css */
 body{
-    background-color: #131316;
+    background-color: #fff4db;
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar-track{
+    background: transparent;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #00000055;
 }
 
 .locanim{
@@ -58,7 +69,7 @@ body{
 }
 
 .discover:hover .discover-image{
-    box-shadow: 0 0 30px #04ac3c;
+    box-shadow: 0 0 30px #131316;
     transition: .3s;
 }
 .discover-img{
@@ -264,7 +275,7 @@ body{
 
     /* ///////////////////////////////Tours/////////////////////////////// */
     .tours{
-        padding: 128px 20px;
+        padding: 128px 10px;
     }
     .tours-featuredCon {
         padding: 0 20px;

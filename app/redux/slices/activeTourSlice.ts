@@ -3,7 +3,7 @@ import { RootState } from "../store";
 
 // define tour state as an object with name, image, desc, content, and date
 export interface Tour {
-    id: any;
+    _id: any;
     name: string;
     image: string;
     type: string;
@@ -26,7 +26,7 @@ export interface Tour {
 
 // define initial state
 const initialState: Tour = {
-    id: "",
+    _id: "",
     name: "",
     image: "",
     type: "",
@@ -56,7 +56,7 @@ export const activeTourSlice = createSlice({
 
         // @ts-ignore
         changeActiveTour: (state, action: PayloadAction<Tour>) => {
-            state.id = action.payload.id;
+            state._id = action.payload._id;
             state.name = action.payload.name;
             state.image = action.payload.image;
             state.type = action.payload.type;

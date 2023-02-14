@@ -12,19 +12,19 @@ export default function Everything() {
             <div className='flex max-w-[70%] gap-10 flex-wrap justify-center'>
                 <div className="flex items-center gap-4 hover:-translate-y-3 hover:scale-110 cursor-pointer duration-300">
                     <div className="bg-[#04ac3c] p-3 rounded-full"> <IoLanguage color='#fff4db' size={30} /> </div>
-                    <p className='text-[#fff4db]'>Awesome Translators</p>
+                    <p className='text-[#131316]'>Awesome Translators</p>
                 </div>
                 <div className="flex items-center gap-4 hover:-translate-y-3 hover:scale-110 cursor-pointer duration-300">
                     <div className="bg-[#04ac3c] p-3 rounded-full"> <MdFoodBank color='#fff4db' size={30} /> </div>
-                    <p className='text-[#fff4db]'> Accomodations </p>
+                    <p className='text-[#131316]'> Accomodations </p>
                 </div>
                 <div className="flex items-center gap-4 hover:-translate-y-3 hover:scale-110 cursor-pointer duration-300">
                     <div className="bg-[#04ac3c] p-3 rounded-full"> <GiSurferVan color='#fff4db' size={30} /> </div>
-                    <p className='text-[#fff4db]'>Ready to go Cars </p>
+                    <p className='text-[#131316]'>Ready to go Cars </p>
                 </div>
                 <div className="flex items-center gap-4 hover:-translate-y-3 hover:scale-110 cursor-pointer duration-300">
                     <div className="bg-[#04ac3c] p-3 rounded-full"> <TbBoxMultiple color='#fff4db' size={30} /> </div>
-                    <p className='text-[#fff4db]'>Multi-Tour Packages</p>
+                    <p className='text-[#131316]'>Multi-Tour Packages</p>
                 </div>
             {/* </div> */}
         </div>

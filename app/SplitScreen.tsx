@@ -38,11 +38,11 @@ export default function SplitScreen() {
 
   return (
     <div ref={ref} className='split-screen w-full h-screen overflow-hidden flex  gap-16 mb-20'>
-        <div className="split-screen-contentCon flex-[1] flex  py-32 items-center justify-center text-[#fff4db]">
+        <div className="split-screen-contentCon flex-[1] flex  py-32 items-center justify-center text-[#131316]">
             <div className='split-screen-content flex flex-col pr-14 text-right'>
-                <motion.p animate={controls} variants={variants1} className='text-sm text-[#ffffff99]'>Blogs</motion.p>
+                <motion.p animate={controls} variants={variants1} className='text-sm text-[#13131699]'>Blogs</motion.p>
                 <motion.h1 animate={controls} variants={variants2} className='text-[6rem] leading-[6rem] font-normal font-serif my-8'>Coffee. <br/> Have a taste from the originals </motion.h1>
-                <motion.div animate={controls} variants={variants3}><Link href="/" className='py-2 text-sm max-w-fit border-b leading-[0.5rem] border-white'>Read the story</Link></motion.div>
+                <motion.div animate={controls} variants={variants3}><Link href="/" className='py-2 text-sm max-w-fit border-b leading-[0.5rem] border-black'>Read the story</Link></motion.div>
             </div>
         </div>
         <div className="split-screen-img flex-[1] relative flex items-center justify-start overflow-hidden ">

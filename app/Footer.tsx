@@ -11,7 +11,7 @@ export default function Footer() {
         });
     }
   return (
-    <div className='footer w-full h-[100vh] flex text-[#fff4db]'>
+    <div className='footer w-full h-[100vh] flex text-[#131316]'>
         <div className="flex-[1] mb-5 flex flex-col gap-24 h-full py-[150px] pl-10">
             <div className="flex flex-wrap gap-20 w-full text-2xl font-poppins">
                 <div className="flex flex-col gap-y-5">
@@ -44,7 +44,7 @@ export default function Footer() {
             </div>
         </div>
         <div className="flex-[1] min-w-[50%] h-full flex flex-col items-end justify-between pb-[150px] pt-10 pr-10">
-            <div className="flex items-center justify-center w-10 h-10 rounded-[50%] bg-[#FEA100] text-white">
+            <div className="flex items-center justify-center w-10 h-10 text-[#131316]">
                 <button onClick={scrollToTop} >
                     <FaArrowUp size={30} />
                 </button>

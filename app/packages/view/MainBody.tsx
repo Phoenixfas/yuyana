@@ -52,7 +52,7 @@ export default function MainBody() {
         <div className="flex flex-wrap justify-center gap-10 max-w-[1000px]">
             {pkg.tour_ids.map((item: any, index: any) => (
                 <Link href={`/tours/view`} key={index} onClick={() => dispatch(changeActiveTour(getTour(item)))}>
-                    <div className="relative w-[270px] rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl hover:shadow-[#fff4db88] duration-300 cursor-pointer flex flex-col items-center justify-center">
+                    <div className="relative w-[350px] rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl hover:shadow-[#fff4db88] duration-300 cursor-pointer flex flex-col items-center justify-center">
                         <div className='absolute flex items-center justify-center p-3 w-full h-full bg-[#00000088] text-center z-50 text-white font-light opacity-0  hover:opacity-100 duration-500'>
                             <p>{getTour(item).name}</p>
                         </div>

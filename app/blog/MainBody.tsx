@@ -41,7 +41,7 @@ export default function MainBody() {
         <div className="flex flex-wrap justify-center gap-10 max-w-[1000px]">
             {data.map((item: any) => (
                 <Link href={`/blog/view`} key={item.id} onClick={() => dispatch(changeActiveBlog(item))}>
-                    <div className="w-[270px] bg-[#fff4db] rounded-lg overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-[#fff4db88] duration-300 cursor-pointer flex flex-col items-center justify-center">
+                    <div className="w-[270px] h-[320px] bg-[#04ac3c] rounded-lg overflow-hidden hover:scale-105 hover:shadow-2xl hover:shadow-[#13131688] duration-300 cursor-pointer flex flex-col items-center justify-center">
                         <div className="flex-[1] w-full overflow-hidden">
                             <Image src={item.image} alt={item.title} className="w-full h-full object-cover" width={500} height={500} priority />
                         </div>
@@ -49,7 +49,7 @@ export default function MainBody() {
                             <div className="flex p-1 w-16 h-16 bg-[#FEA100] rounded-full relative translate-y-[-50%]">
                                 <Image src={"/images/Logo.png"} alt={"yuyana"} className="w-full h-full object-contain bg-[#fff4db] rounded-full p-1" width={500} height={500} priority />
                             </div>
-                            <div className="flex text-black text-sm text-center">{item.snippet}</div>
+                            <div className="flex text-[#fff4db] text-sm text-center">{item.snippet.substr(0, 50)}</div>
                         </div>
                     </div>
                 </Link>

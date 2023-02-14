@@ -27,7 +27,7 @@ export default function Featured() {
 
 
   return (
-    <div className="max-w-[300px] flex flex-col px-5 py-10 rounded-xl bg-[#fff4db33] h-fit">
+    <div className="max-w-[300px] flex flex-col px-5 py-10 rounded-xl bg-[#13131633] h-fit">
         <h1 className='text-3xl text-center font-bold mb-10'>Featured Places</h1>
         <div className='w-full flex flex-col items-center gap-5'>
             {data.map((item: any, index: any) => (

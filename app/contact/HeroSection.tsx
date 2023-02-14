@@ -6,7 +6,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 export default function HeroSection() {
 
   return (
-    <div className='about-hero w-full overflow-hidden flex pt-40'>
+    <div className='about-hero w-full overflow-hidden flex pt-40 text-[#131316]'>
         <div className="about-hero-img flex-[1] flex flex-col items-end">
             <motion.div initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 2, damping: 10, bounce: 0.8, type: "spring" }} className="flex-[1] relative flex items-center justify-start overflow-hidden ">
                 <div className='w-full h-[500px] relative overflow-hidden rounded-2xl flex '>
@@ -23,7 +23,7 @@ export default function HeroSection() {
                 CONTACT US
             </motion.div>
             <motion.div initial={{x: 300, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 1}} className="about-hero-content flex-[1] flex flex-col items-start text-lg pr-40">
-                <p>Our travel experts are here to assist you in making important decisions regarding your adventure to Ethiopia. We are travelers too and can answer any questions you might have about the trip you&aops;re considering. Don&apos;t be hesitant; call us today to see how we can assist you in making the best decision possible.</p>
+                <p>Our travel experts are here to assist you in making important decisions regarding your adventure to Ethiopia. We are travelers too and can answer any questions you might have about the trip you&apos;re considering. Don&apos;t be hesitant; call us today to see how we can assist you in making the best decision possible.</p>
             </motion.div>
         </div>
     </div>

@@ -3,7 +3,7 @@ import { RootState } from "../store";
 
 // define package state as an object with name, tour_ids, desc, content, and date
 export interface Package {
-    id: any;
+    _id: any;
     name: string;
     description: string;
     type: string;
@@ -15,7 +15,7 @@ export interface Package {
 
 // define initial state
 const initialState: Package = {
-    id: "",
+    _id: "",
     name: "",
     description: "",
     type: "",
@@ -34,7 +34,7 @@ export const activePackageSlice = createSlice({
 
         // @ts-ignore
         changeActivePackage: (state, action: PayloadAction<Package>) => {
-            state.id = action.payload.id;
+            state._id = action.payload._id;
             state.name = action.payload.name;
             state.description = action.payload.description;
             state.type = action.payload.type;

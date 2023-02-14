@@ -39,7 +39,7 @@ export default function Contacts() {
 
     
   return (
-    <div ref={ref} className="w-full min-h-screen flex flex-col items-center justify-center text-[#fff4db] gap-32">
+    <div ref={ref} className="w-full min-h-screen flex flex-col items-center justify-center text-[#131316] gap-32">
         {/* <motion.h1 variants={variants1} animate={controls} className='text-6xl font-bold tracking-[.5rem] text-[#04ac3c]'>REACH US @</motion.h1> */}
         <div className="w-full relative flex  justify-center">
 

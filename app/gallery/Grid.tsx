@@ -11,7 +11,7 @@ export default function Grid() {
     <div className="w-full py-20 px-5 flex items-center justify-center">
         <div className="w-full flex flex-wrap gap-10 justify-center">
             {gallery.map((image, index) => (
-                <div key={index} className="p-3 w-[250px] h-[250px] bg-slate-500 rounded-lg hover:scale-105 duration-300 cursor-pointer" onClick={() => {
+                <div key={index} className="p-5 w-[250px] h-[200px] bg-[#13131688] rounded-lg hover:scale-105 duration-300 cursor-pointer" onClick={() => {
                     dispatch(toggleGallery())
                     dispatch(changeActiveImage(image))
                 }}>

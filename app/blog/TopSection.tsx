@@ -9,7 +9,7 @@ export default function TopSection() {
           <ParallaxProvider>
             <div className="relative h-full w-full overflow-hidden">
               <Parallax speed={30} className="w-full h-[600px] relative">
-                <Image src={"/images/tour/serene.jpg"} className="brightness-75" alt="tours" layout="fill" objectFit="cover" />
+                <Image src={"/images/tour/serene.jpg"} className="brightness-50" alt="tours" layout="fill" objectFit="cover" />
               </Parallax>
             </div>
           </ParallaxProvider>

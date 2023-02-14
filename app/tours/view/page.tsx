@@ -8,7 +8,7 @@ import BookTour from './BookTour'
 
 export default function View() {
   return (
-    <div className='min-h-[100vh] w-full text-[#fff4db]'>
+    <div className='min-h-[100vh] w-full text-[#131316]'>
       <ParticlesContainer />
       <HeroSection />
       <MiddleSection />

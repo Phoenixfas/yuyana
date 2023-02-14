@@ -9,7 +9,7 @@ import TopSection from './TopSection'
 
 export default function page() {
   return (
-    <div className='min-h-[100vh] w-full text-[#fff4db]'>
+    <div className='min-h-[100vh] w-full text-[#131316]'>
 
         <ParticlesContainer />
         <TopSection />

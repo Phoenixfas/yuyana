@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 export default function HeroSection() {
   return (
-    <div className='about-hero w-full overflow-hidden flex pt-40 gap-32'>
+    <div className='about-hero w-full overflow-hidden flex pt-40 gap-32 text-[#131316]'>
         <div className="about-hero-img flex-[1] flex flex-col items-end">
             <motion.div initial={{x: -300, opacity: 0}} animate={{x: 0, opacity: 1}} transition={{duration: 2, damping: 10, bounce: 0.8, type: "spring" }} className="flex-[1] relative flex items-center justify-start overflow-hidden ">
                 <div className='w-[550px] h-[600px] relative overflow-hidden rounded-2xl'>

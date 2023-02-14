@@ -36,7 +36,7 @@ export default function Team() {
 
     
   return (
-    <div ref={ref} className="w-full mt-52 flex flex-col items-center text-[#fff4db] gap-32">
+    <div ref={ref} className="w-full mt-52 flex flex-col items-center text-[#131316] gap-32">
         <motion.h1 variants={variants1} animate={controls} className='about-team-h1 text-6xl font-bold tracking-[.5rem] text-[#04ac3c]'>MEET OUR TEAM</motion.h1>
         <div className="w-full relative flex  justify-center">
 

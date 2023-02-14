@@ -28,7 +28,7 @@ export default function HeroSection() {
 
 
   return (
-    <div className='tour-view-hero flex min-h-screen overflow-hidden'>
+    <div className='tour-view-hero flex min-h-screen overflow-hidden bg-[#FEA100]'>
         <motion.div animate="visible" initial="hidden" variants={variants1}  className="tour-view-hero-img relative flex-[1] min-h-screen max-h-screen overflow-hidden rounded-r-2xl">
             <ParallaxProvider>
                 <Parallax speed={-30} className="absolute w-full h-full" >
@@ -41,9 +41,9 @@ export default function HeroSection() {
         </motion.div>
         <motion.div animate="visible" initial="hidden" variants={variants4}  className='tour-view-hero-content flex flex-col flex-[1] py-32 min-h-screen justify-center'>
             <div className="relative flex flex-col p-10 items-center">
-                <h3 className='text-4xl mb-3 text-center'>{tour.title}</h3>
-                <motion.h4 animate="visible" initial="hidden" variants={variants3} className='text-sm mb-10 text-[#FEA100] text-center'>{tour.titleMotto}</motion.h4>
-                <motion.p animate="visible" initial="hidden" variants={variants3} className='text-md font-light'>{tour.description}</motion.p>
+                <h3 className='text-4xl mb-3 text-center text-[#fff4db]'>{tour.title}</h3>
+                <motion.h4 animate="visible" initial="hidden" variants={variants3} className='text-sm mb-10 text-[#131316] text-center'>{tour.titleMotto}</motion.h4>
+                <motion.p animate="visible" initial="hidden" variants={variants3} className='text-md font-light text-[#fff4db]'>{tour.description}</motion.p>
             </div>
         </motion.div>
     </div>

@@ -11,7 +11,7 @@ const variants1 = {
 
 export default function MiddleSection() {
     const ref = useRef(null)
-    const isInView = useInView(ref, { margin: "0px", once: false})
+    const isInView = useInView(ref, { margin: "100px", once: true})
     const controls = useAnimationControls()
     
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function MiddleSection() {
 
   return (
     <motion.div ref={ref} variants={variants1} animate={controls} className='mt-32 w-full flex flex-col items-center px-10'>
-        <h1 className='text-[#fff4db] font-bold text-5xl mb-5 text-center'>Tour Program</h1>
+        <h1 className='text-[#131316] font-bold text-5xl mb-5 text-center'>Tour Program</h1>
         <p className='text-[#FEA100] text-xl mb-20 text-center' >EXPERIENCE WORLD-CLASS TOUR SERVICE</p>
         <div className="flex flex-wrap max-w-[1000px] gap-10 justify-center">
             {tour.tour_program.map((item: any, index: any) => (

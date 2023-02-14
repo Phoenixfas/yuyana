@@ -3,7 +3,7 @@ import { RootState } from "../store";
 
 // define blog state as an object with title, image, desc, content, and date
 export interface Blog {
-    id: any;
+    _id: any;
     title: string;
     image: string;
     snippet: string;
@@ -15,7 +15,7 @@ export interface Blog {
 
 // define initial state
 const initialState: Blog = {
-    id: "",
+    _id: "",
     title: "",
     image: "",
     snippet: "",
@@ -34,7 +34,7 @@ export const activeBlogSlice = createSlice({
 
         // @ts-ignore
         changeActiveBlog: (state, action: PayloadAction<Blog>) => {
-            state.id = action.payload.id;
+            state._id = action.payload._id;
             state.title = action.payload.title;
             state.image = action.payload.image;
             state.snippet = action.payload.snippet;
